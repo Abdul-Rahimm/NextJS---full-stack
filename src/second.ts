@@ -1,8 +1,18 @@
-function handleTax(tax = 2300) : number{
-    if(tax > 20000)
-        return tax;
-
-    return 0;
+interface employeeType{
+    readonly id: number,
+    name?: string,
+    retire: (date:Date) => void,
 }
 
-console.log(handleTax())
+let employee:employeeType = 
+    {
+        id: 1, 
+        name:"rahim", 
+        retire: (date: Date)=>{
+            console.log(date);
+        }
+    };  //this is initializing
+
+
+console.log(employee);
+//we assign the values to the particular object variables thru :
