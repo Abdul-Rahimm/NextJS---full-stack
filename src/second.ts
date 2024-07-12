@@ -1,4 +1,8 @@
-enum Size { Small = 1, Medium, Large};
-console.log(Size);
+function handleTax(tax = 2300) : number{
+    if(tax > 20000)
+        return tax;
 
-//adding const before enum generates more optimal JS codes
+    return 0;
+}
+
+console.log(handleTax())
